@@ -1,3 +1,5 @@
+import Knoten
+
 def main():   
     gerichtet=False
 
@@ -7,12 +9,15 @@ def main():
     eingabe=input("choose\n")
 
     match eingabe:
+
         case "a":
-            pass
+            Knoten.self_nodes()
+    
         case "b":
-            pass
+            Knoten.user_nodes()
+
         case "c":
-            pass
+            Knoten.koordinaten_knoten()
         case _:
             print("ridi")
 

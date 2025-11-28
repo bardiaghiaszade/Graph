@@ -4,8 +4,8 @@ from Knoten import koordinaten_database, farben
 def create_kanten(t):
     graph = {}
     for node in koordinaten_database:
-        verbindungen = input(f"Verbindiungen von {node[0]}\n").split()
-        graph[node[0]] = verbindungen
+        verbindungen = input(f"Verbindiungen von {node}\n").split()
+        graph[node] = verbindungen
     print(graph)
     print(koordinaten_database)
     return graph

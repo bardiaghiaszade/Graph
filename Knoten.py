@@ -46,6 +46,7 @@ def user_nodes(t):
         t.write(nodes[i], align="center", font=("Arial", 12, "bold"))
 
         koordinaten_database[nodes[i]] = [x, y]
+    print (nodes)
     
     
 def koordinaten_knoten(t):

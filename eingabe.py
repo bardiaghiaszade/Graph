@@ -6,9 +6,19 @@ koordinaten_database = {}
 # Die Namen von Knoten mit x, y-Koordinaten speichern.
 graph = {}
 # Die Namen von Knoten und deren Nachbarn speichern.
+gerichtet = False
 
 def get_eingabe():
+    global gerichtet
+    # global damit wir es in Funktion erreichen können
     buchstaben = "abcdefghijklmnopqrstuvwxyz"
+    ob_gerichtet=input("gerichtet ? (ja oder nein)\n")
+
+    if ob_gerichtet=="ja":
+        gerichtet=True
+    elif ob_gerichtet=="nein":
+        gerichtet=False
+
     print("a) die Anzahl von Knoten")
     print("b) die Namen von Knoten")
     print("c) die Koordinaten von Knoten")

@@ -4,7 +4,6 @@ import turtle
 import random
 import eingabe
 
-
 def setup_turtle():
     t = turtle.Turtle()
     t.hideturtle()
@@ -16,7 +15,6 @@ farben = ["blue", "green", "purple", "orange", "red", "pink", "cyan"]
 
 kd = eingabe.koordinaten_database
 gph = eingabe.graph
-
 
 def draw_knoten():
     t = setup_turtle()
@@ -50,6 +48,25 @@ def draw_kanten():
         for i in range(len(val)):
             t.pendown()
             x2, y2 = kd[val[i]]
+            if eingabe.gerichtet:
+                # Pfeilspitze berechnen (2/3 des Weges)
+                x3= x + (x2 - x) * (2/3)
+                y3= y + (y2 - y) * (2/3)
+
+                t.goto(x3,y3)
+
+                # Pfeil zeichnen
+                angel = t.towards(x2,y2)
+                t.setheading(angel)
+                t.shape("arrow")
+                t.shapesize(1,1)
+                t.stamp()
+                t.hideturtle()
+            """
+            wenn es gerichtet ist dann bild einen Pfeil damit die
+            Richtung gezeichnet wird
+            """
+
             t.goto(x2, y2)
             t.goto(x, y)
             """

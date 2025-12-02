@@ -39,3 +39,4 @@ def ist_baum(graph):
         return
 
     print("Der Graph ist ein Baum.\n")
+ 

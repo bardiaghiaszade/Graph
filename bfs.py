@@ -34,3 +34,4 @@ def shortest_path(graph, start, goal):
 
     print(f"Es gibt keinen Weg zwischen {start} und {goal}\n")
     # Falls kein Weg gefunden wurde
+     

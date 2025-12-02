@@ -76,3 +76,4 @@ def draw_kanten():
             Turtle geht zu diesem Nachbarn und kommt zurück,
             damit er zum nächsten Nachbarn gehen kann.
             """
+ 

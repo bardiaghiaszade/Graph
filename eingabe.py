@@ -78,3 +78,4 @@ def get_eingabe():
 
     return abc1
 # Warum machen wir ein return für abc1? Damit wir es in main.py bekommen können!
+ 

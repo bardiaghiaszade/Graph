@@ -18,6 +18,9 @@ def get_eingabe():
         gerichtet=True
     elif ob_gerichtet=="nein":
         gerichtet=False
+    else:
+        print("falshe Eingabe\n")
+        get_eingabe()
 
     print("a) die Anzahl von Knoten")
     print("b) die Namen von Knoten")
@@ -62,6 +65,7 @@ def get_eingabe():
 
         case _:
             print("Falsche Eingabe\n")
+            return
 
     for node in koordinaten_database:
         verbindungen = input(f"Verbindungen von {node}\n").split()

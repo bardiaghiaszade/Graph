@@ -32,6 +32,9 @@ def main():
         start = input("von:\n")
         goal = input("bis:\n")
         bfs.shortest_path(eingabe.graph, start, goal)
+    else:
+        print("falsche Eingabe\n")
+        return
 
 
 if __name__ == "__main__":

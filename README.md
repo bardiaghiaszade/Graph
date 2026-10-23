@@ -14,9 +14,6 @@ A Python project for creating, visualizing, and analyzing graphs. It provides an
 - [Project Structure](#project-structure)
 - [Algorithms](#algorithms)
 - [Current Limitations](#current-limitations)
-- [Possible Improvements](#possible-improvements)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Overview
 
@@ -191,21 +188,3 @@ For a standard adjacency-list implementation, BFS has a time complexity of **O(V
 The tree-checking function uses recursive DFS to visit vertices, detect cycles, and compare the number of visited vertices with the total number of vertices.
 
 A tree is a connected, acyclic, undirected graph. The current implementation starts its traversal at the vertex named `a`, so the graph must contain that vertex for the check to work as intended. The graph's connections should also be represented consistently as an undirected graph for the result to match the standard mathematical definition of a tree.
-
-## Current Limitations
-
-- The prompts are primarily in German, while some menu prompts use English.
-- The program expects the user to enter valid vertex names and connections; invalid or missing neighbors may cause runtime errors.
-- In number-based and coordinate-based setup, vertices are named using lowercase letters, so the current approach is limited by the 26-letter alphabet.
-- The drawing uses the supplied coordinates or a circular layout. It does not automatically prevent vertices or edges from overlapping.
-
-## Possible Improvements
-
-- Validate user input and provide clearer error messages.
-- Support arbitrary vertex names in every setup mode.
-- Make the tree-checking function work with any valid starting vertex and explicitly validate undirected graphs.
-- Improve graph layout to reduce overlapping vertices and edges.
-- Separate algorithm results from printed output so other parts of the program can reuse them.
-- Add automated tests for BFS, tree checking, directed graphs, disconnected graphs, and invalid input.
-- Add screenshots or a short GIF showing graph creation and visualization.
-
